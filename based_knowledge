@@ -1,0 +1,49 @@
+第一章
+01
+语言？ 沟通交流的方式
+计算机只认识二进制 （编程语言 经编译器或解释器 翻译成二进制）
+思考：为什么不直接将中文翻译成二进制？
+
+02
+Python环境安装
+python官网 python.org
+添加Python到环境变量? 任意位置都可执行python 解释器
+验证安装 cmd-python
+ linux下源码安装Python 依赖第三方库 
+  yum install wget zlib-devel bzip2-devel openssl-devel ncurses-devel sqlite-devel readline-devel tk-devel gcc make zlib zlib-devel libddi-devel -y
+  wget https://www.python.org/ftp/python/3.12.1/Python-3.12.1.tgz
+  ./configure --prefix=/usr/local/python-3.12.1
+  make && make install
+  rm -rf /usr/bin/python
+  ln -s /usr/local/python-3.12.1/bin/python /usr/local/python
+  修改yum配置，避免影响yum  /usr/bin/python -> /usr/bin/python2
+  vim /usr/libexec/urlgrabber-ext-down
+  vim /usr/bin/yum 
+
+03
+第一个Python程序
+print("hello world!!!")
+
+04
+python解释器 解释执行Python代码
+计算机只认识二进制 0和1
+思考：在Python解释器程序内，写完一行代码并回车，会直接运行它
+如何编写多行代码并一次执行呢？ .py文件
+解释器程序 python.exe
+  1.计算机只认识什么？
+  2.Python解释器的作用？
+  3..py文件是什么？
+  4.Python解释器在哪？
+
+05
+集成开发环境 pycharm
+Python程序开发：Python解释器环境，Python解释器，第三方IDE pycharm
+安装pycharm 略
+  新建工程-工程路径-添加解释器
+
+06
+pycharm拓展
+主题
+字体 setting-editor-font
+插件 chinese/translation
+ctrl+shift+f10 运行当前代码文件
